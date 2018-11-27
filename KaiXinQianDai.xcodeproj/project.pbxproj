@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96402CE977C9C7146CDE268F /* libPods-KaiXinQianDai.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5069382F0B38FC4377C323F2 /* libPods-KaiXinQianDai.a */; };
 		A20BE19321AD27EF00CD6540 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A20BE19221AD27EF00CD6540 /* BaseViewController.m */; };
 		A20BE19621AD285400CD6540 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A20BE19521AD285400CD6540 /* LaunchViewController.m */; };
 		A20BE19D21AD28A100CD6540 /* 3.5.png in Resources */ = {isa = PBXBuildFile; fileRef = A20BE19821AD28A100CD6540 /* 3.5.png */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5069382F0B38FC4377C323F2 /* libPods-KaiXinQianDai.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KaiXinQianDai.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20BE19121AD27EF00CD6540 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		A20BE19221AD27EF00CD6540 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		A20BE19421AD285400CD6540 /* LaunchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
@@ -100,6 +102,8 @@
 		A232761121ABF2ED006944B9 /* UIColor+StrColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+StrColor.h"; sourceTree = "<group>"; };
 		A232761221ABF2ED006944B9 /* UIColor+StrColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+StrColor.m"; sourceTree = "<group>"; };
 		A232761521ABF54A006944B9 /* MethodDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodDefine.h; sourceTree = "<group>"; };
+		C924C0F879E5DD8048A008D7 /* Pods-KaiXinQianDai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaiXinQianDai.release.xcconfig"; path = "Pods/Target Support Files/Pods-KaiXinQianDai/Pods-KaiXinQianDai.release.xcconfig"; sourceTree = "<group>"; };
+		DF9B47373A2B4CA00308D5B6 /* Pods-KaiXinQianDai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaiXinQianDai.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KaiXinQianDai/Pods-KaiXinQianDai.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96402CE977C9C7146CDE268F /* libPods-KaiXinQianDai.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +132,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E80BA0B9592D696261FE98D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF9B47373A2B4CA00308D5B6 /* Pods-KaiXinQianDai.debug.xcconfig */,
+				C924C0F879E5DD8048A008D7 /* Pods-KaiXinQianDai.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A20BE19721AD28A100CD6540 /* LauchImages */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +160,8 @@
 				A23275CB21ABEC1F006944B9 /* KaiXinQianDaiTests */,
 				A23275D621ABEC1F006944B9 /* KaiXinQianDaiUITests */,
 				A23275B121ABEC12006944B9 /* Products */,
+				6E80BA0B9592D696261FE98D /* Pods */,
+				CB7933ECD019A901A9FBBE08 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -303,6 +319,14 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		CB7933ECD019A901A9FBBE08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5069382F0B38FC4377C323F2 /* libPods-KaiXinQianDai.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -310,9 +334,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A23275DC21ABEC1F006944B9 /* Build configuration list for PBXNativeTarget "KaiXinQianDai" */;
 			buildPhases = (
+				8368FA873B4E9EA8DC560225 /* [CP] Check Pods Manifest.lock */,
 				A23275AC21ABEC12006944B9 /* Sources */,
 				A23275AD21ABEC12006944B9 /* Frameworks */,
 				A23275AE21ABEC12006944B9 /* Resources */,
+				C8FFC36A39FC347D6C68F227 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -432,6 +458,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8368FA873B4E9EA8DC560225 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KaiXinQianDai-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8FFC36A39FC347D6C68F227 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KaiXinQianDai/Pods-KaiXinQianDai-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KaiXinQianDai/Pods-KaiXinQianDai-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A23275AC21ABEC12006944B9 /* Sources */ = {
@@ -619,6 +694,7 @@
 		};
 		A23275DD21ABEC1F006944B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF9B47373A2B4CA00308D5B6 /* Pods-KaiXinQianDai.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -639,6 +715,7 @@
 		};
 		A23275DE21ABEC1F006944B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C924C0F879E5DD8048A008D7 /* Pods-KaiXinQianDai.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
